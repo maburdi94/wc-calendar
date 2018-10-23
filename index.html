@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Component Calendar</title>
+</head>
+<body>
+    <div>
+        <wc-calendar></wc-calendar>
+    </div>
+
+    <script>
+        document.querySelector('wc-calendar').addEventListener('day-select', e => {
+           alert(e.detail['date']);
+        });
+    </script>
+
+    <script src="wc-calendar.js"></script>
+</body>
+</html>
